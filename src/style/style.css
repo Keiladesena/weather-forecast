@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&family=Nanum+Brush+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    background: linear-gradient(#7e93d5);
+}
+
+#container{
+    background-color: #dfe6fd;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 4px 12px;
+
+}
+
+#search input{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+
+}
+#search input:focus-visible{
+    outline: none;
+}
+#search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#weather{
+    display: none;
+    margin-top: 20px;
+}
+#weather.show{
+    display: block;
+}
+#weather #title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #011248a1;
+}
+
+#temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #7e93d5, #5472cf);
+    color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#temp_img{
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+    width: 100px;
+}
+#temp_value{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+#temp_desciption{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#other_infos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+#other_infos .info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    background-color: #ffff;
+    gap: 10px;
+}
+
+#other_infos .info h2{
+    font-size: 12px;
+    font-weight: 600;
+}
+#other_infos .info i {
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+#temp_max_icon{
+    color: rgb(134, 35, 2);
+}
+#temp_min_icon{
+    color: rgb(5, 98, 204);
+}
+#humidity_icon{
+    color: rgb(2, 97, 156);
+}
+#wind_icon{
+    color: rgba(5, 0, 99, 0.719);
+}
